@@ -1,0 +1,142 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1D1D1D;
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #2272FF;
+}
+
+/* Translation Container */
+.translation-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Panels (Input & Output) */
+.panel {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.tab-btn {
+  background-color: #1D1D1D;
+  border: 2px solid #2272FF;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 0 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9em;
+}
+
+.tab-btn.active {
+  background-color: #2272FF;
+}
+
+.tab-btn.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.tab-btn:hover {
+  background-color: #2272FF;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid #2272FF;
+  background-color: #1D1D1D;
+  color: #ffffff;
+  resize: none;
+}
+
+/* Character count */
+#charCount {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #2272FF;
+}
+
+/* Translation display */
+.translation-display {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid #2272FF;
+  background-color: #1D1D1D;
+  overflow-y: auto;
+}
+
+/* Swap Container */
+.swap-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#swapBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#swapBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Translate Button Container */
+.translate-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#translateBtn {
+  background-color: #2272FF;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#translateBtn:hover {
+  background-color: #0052cc;
+}
