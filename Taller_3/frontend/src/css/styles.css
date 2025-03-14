@@ -37,7 +37,7 @@ header h1 {
   gap: 10px;
 }
 
-/* Panels (Input & Output) */
+/* Booxes (Input & Output) */
 .panel {
   flex: 1;
   min-width: 300px;

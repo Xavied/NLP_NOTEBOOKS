@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Translation Service</title>
+  <title>Servicio de TRADUCCIÓN</title>
   <link rel="stylesheet" href="../src/css/styles.css" />
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>Translation Service</h1>
+      <h1>TRADUCTOR INGLÉS - ESPAÑOL - FRANCÉS </h1>
     </header>
 
     <div class="translation-container">
@@ -17,17 +17,17 @@
       <div class="panel input-panel">
         <div class="tabs" id="sourceTabs">
           <button class="tab-btn active" data-lang="en">English</button>
-          <button class="tab-btn" data-lang="es">Spanish</button>
-          <button class="tab-btn" data-lang="fr">French</button>
+          <button class="tab-btn" data-lang="es">Español</button>
+          <button class="tab-btn" data-lang="fr">Français</button>
         </div>
         <textarea id="inputText" maxlength="255" placeholder="Ingresa un texto (máximo 255 caracteres)"></textarea>
         <p id="charCount">0/255</p>
       </div>
 
-      <!-- Swap Button (as separator) -->
+      <!-- Swap Button (separador!!) -->
       <div class="swap-container">
         <button id="swapBtn" title="Swap Languages">
-          <!-- Inline SVG icon for swap -->
+          <!-- SVG swap button - (like google translate) -->
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="#2272FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="swap-icon">
             <polyline points="23 4 23 10 17 10"></polyline>
             <polyline points="1 20 1 14 7 14"></polyline>
@@ -36,12 +36,12 @@
         </button>
       </div>
 
-      <!-- Output Panel -->
+      <!-- Translated Panel -->
       <div class="panel output-panel">
         <div class="tabs" id="targetTabs">
           <button class="tab-btn" data-lang="en">English</button>
-          <button class="tab-btn active" data-lang="es">Spanish</button>
-          <button class="tab-btn" data-lang="fr">French</button>
+          <button class="tab-btn active" data-lang="es">Español</button>
+          <button class="tab-btn" data-lang="fr">Français</button>
         </div>
         <div id="translatedText" class="translation-display"></div>
       </div>

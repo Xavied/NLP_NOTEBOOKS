@@ -1,8 +1,7 @@
-// Global variables to track current languages
+// Global variables for source and target languages (default: English to Spanish)
 let sourceLang = "en";
 let targetLang = "es";
 
-// Elements for source and target tabs
 const sourceTabs = document.querySelectorAll("#sourceTabs .tab-btn");
 const targetTabs = document.querySelectorAll("#targetTabs .tab-btn");
 
@@ -15,7 +14,7 @@ const charCount = document.getElementById("charCount");
 // Swap button
 const swapBtn = document.getElementById("swapBtn");
 
-// Update character count as user types
+// Update character count as user types (max 255 characters)
 inputText.addEventListener("input", () => {
   charCount.textContent = `${inputText.value.length}/255`;
 });
@@ -87,8 +86,7 @@ swapBtn.addEventListener("click", () => {
       activateTab(targetTabs, tab);
     }
   });
-  
-  // Update availability for target tabs based on new sourceLang
+
   updateTargetTabsAvailability();
   
   // Move the translated text into the input box
