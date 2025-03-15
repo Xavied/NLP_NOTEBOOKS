@@ -23,11 +23,7 @@ Tanto el back-end como el front-end imponen un límite de 255 caracteres para lo
 
 ## Estructura del Proyecto
 
-translation_service/
-├── docker-compose.yml          #  Archivo de orquestación de múltiples contenedores
-├── Dockerfile.backend          #  Dockerfile para construir el contenedor del back-end
-├── Dockerfile.frontend         #  Dockerfile para construir el contenedor del front-end
-├── .gitignore                  # Archivo para ignorar archivos en Git
+translation_service:
 
 ├── backend/                    # Back-end API code (Flask)
 │   ├── app.py                  # Aplicación principal de Flask API (including /translate)
