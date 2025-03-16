@@ -61,7 +61,7 @@ pip install -r requirements.txt
 
 4. **Run the app**
 python app.py
-El API está disponible en: http://0.0.0.0:5555.   
+El API está disponible en: http://127.0.0.1:5555.   
 
 FRONTEND:
 
