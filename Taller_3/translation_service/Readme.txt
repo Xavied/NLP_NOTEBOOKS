@@ -45,10 +45,10 @@ translation_service:
 
 ## Instalación y Configuración BACKEND - FRONTEND
 
-1. **CClonar el Repositorio:**
+1. **Clonar el Repositorio:**
 
    bash git clone https://github.com/Xavied/NLP_NOTEBOOKS.git
-   cd translation_service/backend
+   cd Taller_3/translation_service/backend
 
 BACKEND:
 
