@@ -25,14 +25,15 @@ Tanto el back-end como el front-end imponen un límite de 255 caracteres para lo
 
 translation_service:
 
-├── backend/                    # Back-end API code (Flask)
-│   ├── app.py                  # Aplicación principal de Flask API (including /translate)
-│   ├── requirements.txt        # Python dependencies (Flask, transformers, etc.)
-│   ├── config.py               # Configuración (por ejemplo, puerto, límites de caracteres)
-│   └── models/                 # Obteninción de modelos de traducción.
+├── backend/                              # Back-end API code (Flask)
+│   ├── app.py                            # Aplicación principal de Flask API (including /translate)
+│   ├── requirements.txt                  # Python dependencies (Flask, transformers, etc.)
+│   ├── config.py                         # Configuración: Caracteres max; Host, Port, Models Names for supported Translations
+│   └── models/
+|       └── translation_models.py         #Carga los modelos de traducción    
 │
-└── frontend/                   # Código de la aplicación de front-end (Interfaz de usuario)
-    ├── index.hetml             # Archivo HTML principal para la interfaz de usuario
+└── frontend/                             # Código de la aplicación de front-end (Interfaz de usuario)
+    ├── index.hetml                       # Archivo HTML principal para la interfaz de usuario
     │           
     │
     └── src/

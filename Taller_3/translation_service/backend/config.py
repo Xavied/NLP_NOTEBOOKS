@@ -2,7 +2,7 @@
 MAX_CHARACTERS = 255
 
 # Flask application settings
-DEBUG = True
+DEBUG = False
 HOST = "0.0.0.0"
 PORT = 5555
 

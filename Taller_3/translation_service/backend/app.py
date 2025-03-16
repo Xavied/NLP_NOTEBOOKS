@@ -3,8 +3,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from models.translation_models import load_translation_pipelines
 from config import MAX_CHARACTERS, HOST, PORT
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+load_dotenv()
+app.config["DEBUG"] = os.environ.get("FLASK_DEBUG")
+
 CORS(app)
 
 # Cargamos la traducción desde el archivo de configuración
