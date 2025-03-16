@@ -4,4 +4,3 @@ torch
 flask
 flask-cors
 gunicorn
-dotenv
